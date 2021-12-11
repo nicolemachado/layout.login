@@ -1,3 +1,8 @@
+<!--
+  Contribuidor: Eduardo Programador
+  www.eduardoprogramador.com
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,10 +11,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="eduardoprogramador/regexwarrior.js"></script>
+  <script type="text/javascript" src="eduardoprogramador/duscript.js"></script>
+  <script type="text/javascript" src="login.js"></script>
 
 </head>
 <body>
-  <form class="form" action="0">
+  <form class="form">
     <div class="card">
       <div class="card-top">
         <img class="imguser" src="./assets/user1.png" alt="">
@@ -19,12 +27,12 @@
 
       <div class="card-group">
         <label>Email</label>
-        <input type="email" name="Email" placeholder="Digite seu email" required>
+        <input type="email" name="Email" placeholder="Digite seu email" required id="email">
       </div>
 
       <div class="card-group">
         <label>Senha</label>
-        <input type="password" name="Email" placeholder="Digite sua senha" required>
+        <input type="password" name="Email" placeholder="Digite sua senha" required id="pass">
       </div>
 
       <div class="card-group">
@@ -32,10 +40,15 @@
       </div>
 
       <div class="card-group btn">
-        <button type="submit">ACESSAR</button>
+        <button type="submit" id="submit">ACESSAR</button>
       </div>
 
     </div>
   </form>
+
+  <script>
+    window.onload = main();
+  </script>
+
 </body>
 </html>
